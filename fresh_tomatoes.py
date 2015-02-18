@@ -17,7 +17,7 @@ def create_movie_tiles_content(movies):
         trailer_youtube_id = youtube_id_match.group(0) if youtube_id_match else None
 
         # Append the tile for the movie with its content filled in
-        content += pageSkeleton.movie_tile_content.format(
+        content += page_skeleton.movie_tile_content.format(
             movie_title=movie.title+"("+movie.year+")",
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id,
@@ -31,7 +31,7 @@ def open_movies_page(movies):
 
   # Replace the placeholder for the movie tiles with the actual dynamically generated content
   movie_content = create_movie_tiles_content(movies)
-  final_rendered_content = pageSkeleton.html.format(movieplaceholder=movie_content)
+  final_rendered_content = page_skeleton.html.format(movieplaceholder=movie_content)
   # Output the file
   print final_rendered_content
   output_file.write(final_rendered_content)
