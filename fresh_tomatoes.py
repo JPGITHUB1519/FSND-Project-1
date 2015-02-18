@@ -4,7 +4,7 @@ build the final webpage from the template based on a list of movie objects'''
 import webbrowser
 import os
 import re
-import pageSkeleton
+import page_skeleton
 
 
 def create_movie_tiles_content(movies):
