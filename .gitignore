@@ -1,6 +1,9 @@
 # Compiled python files
 *.pyc
 
+# Produced HTML file
+fresh_tomatoes.html
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
