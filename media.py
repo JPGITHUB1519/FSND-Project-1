@@ -16,7 +16,7 @@ class Movie(Video):
 	"""This class provides a way to store movie related information"""
 
 	def __init__(self, title, storyline, year, poster_image,
-				 trailer_youtube, ):
+				 trailer_youtube):
 		Video.__init__(self, title, storyline)
 		self.year = year
 		self.poster_image_url = poster_image
@@ -26,7 +26,7 @@ class Show(Video):
 	"""This class provides a way to store TV Show related information"""
 
 	def __init__(self, title, storyline, episodes, poster_image,
-				 trailer_youtube, ):
+				 trailer_youtube):
 		Video.__init__(self, title, storyline)
 		self.episodes = episodes
 		self.poster_image_url = poster_image
